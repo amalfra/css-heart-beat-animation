@@ -5,6 +5,15 @@ A quick experiment to create beat animation on heart icon using CSS. It is imple
 
 ![screenshot](https://raw.githubusercontent.com/amalfra/css-heart-beat-animation/master/demo-anim.gif)
 
+## How it works
+
+The CSS required to add the effect(which are only few lines) are available in ```beat-animation.css``` file. 
+It's just basic CSS animation and may help more the people getting started with animations in CSS.
+
+* First we will define ```@keyframes``` rule which is used to define what styles the element will have at certain times of animation. 
+The style that a frame of animation will apply to the element will be scale function of transformation property. So each frame of animation will scale the element size by defined factor.
+* Now define the animation property with .25s duration and alternate direction. With ```alternate``` direction the animation is played forwards first, then backwards. This way in one frame the element will be size will be scaled up(forward) and in next the size will be scaled down(backwards). The animation iteration count will be defined as infinte so that this keeps looping. Thus it will create the effect of beating.
+
 ## Development
 
 Questions, problems or suggestions? Please post them on the [issue tracker](https://github.com/amalfra/css-heart-beat-animation/issues).
