@@ -1,0 +1,8 @@
+.beat {
+  animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes beat {
+	to { transform: scale(1.4); }
+}
